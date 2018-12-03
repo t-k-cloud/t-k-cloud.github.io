@@ -10,11 +10,12 @@
 <li><a href="javascript:void(0)" onclick="o(this)">tkblog</a></li>
 <li><a href="javascript:void(0)" onclick="o(this)">hippo </a></li>
 <li><a href="javascript:void(0)" onclick="o(this)">jobd  </a></li>
+<li><a href="javascript:void(0)" onclick="o(this)">jobd/log/all</a></li>
 <li><a href="javascript:void(0)" onclick="o(this)">droppy</a></li>
 <li><a href="javascript:void(0)" onclick="o(this)">static</a></li>	
 <li><a href="javascript:void(0)" onclick="o(this)">static/incr/2018/pub-shudu.mp4</a></li>
 </ul>
-<h3>Master log</h3>
+<img src="nerdy.jpg" style="max-height: 200px"/>
 <pre style="background-color: black; color: grey" id="matrix"></pre>
 <script>
 var IP = '137.135.70.109';
@@ -37,7 +38,7 @@ var itv = setInterval(() => {
       wr = arr.slice(l - N, l).join('\n');
     else
       wr = res['data']
-    document.getElementById("demo").innerHTML = wr
+    document.getElementById("matrix").innerHTML = wr
   }).catch(function (err) {
     clearInterval(itv)
   })
