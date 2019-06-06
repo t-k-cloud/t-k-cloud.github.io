@@ -29,7 +29,7 @@ function o(obj) {
 var itv = setInterval(() => {
   axios({
     method: 'get',
-    url: 'http://cors-anywhere.herokuapp.com/' + 'http://' + IP + '/jobd/log/all'
+    url: 'https://cors-anywhere.herokuapp.com/' + 'http://' + IP + '/jobd/log/all'
   }).then(function (res) {
     const arr = res['data'].split('\n')
     const N = 30 // print last L lines
